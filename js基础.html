@@ -21,6 +21,36 @@ console.log(result);
 alert("Z中文");
 
 
+var x,y;
+var x=Math.random(100);
+var y=Math.random(100);
+if(x>y){
+    document.write(x)
+}
+else{
+    document.write(y)
+}
+
+var today = new Date();   //获取当天日期
+var year = today.getFullYear();   //获取当天年份
+
+if(year%400==0)
+{
+    document.write("<br>"+"闰年")
+}
+else(year%4==0&&year%100!==0)
+{
+    document.write("<br>"+"不是闰年")
+}
+
+var a=5;
+var b=6;
+var c=a/b;
+var e=parseInt(a/b);
+var d=Math.round(c);
+document.write(d);
+document.write(e);
+
 
 </script>
 

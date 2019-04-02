@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    #div1{
+        width: 400px;
+        height: 400px;
+        position: absolute;
+        float: left;
+        background: #ff0036;
+        overflow: hidden;
+        float: left;
+        background: url(img/6.jpg) no-repeat 0 0; 
+       
+
+        }
+    #div2{
+        width: 400px;
+        height: 400px;
+        position: relative;
+        float: left;
+        background: #ff0036;
+        left: 400px;
+        float: left;
+        overflow: hidden;
+        display: none;
+        }
+    #div3{
+        width: 200px;
+        height: 200px;
+        float: left;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        background:rgba(0,0,0,0.2);
+        display: none;
+
+    }
+       
+    </style>
+    
+</head>
+
+
+<body>
+   <div id="div1">
+       <div id="div3"></div>
+       <!-- <img src="img/6.jpg" alt=""> -->
+   </div>
+   <div id="div2">
+       <img class="bigger" src="img/7.jpg" alt="" >
+   </div>
+    
+
+
+    
+<script>
+     var oDiv1=document.getElementById('div1');
+        // var oDiv3=document.getElementById('div3');
+        // var oDiv2=document.getElementById('div2');
+        // var oBigger=document.getElementsByClassName("bigger")
+        
+        // oDiv3.onmousedown=function(e){
+        
+        // var disX = e.clientX-oDiv3.offsetLeft;
+        // var disY = e.clientY-oDiv3.offsetTop;
+
+        // var bigX= 02*(e.clientX-oBigger.offsetLeft);
+        // var bigY=2*(e.clientY-oBigger.offsetTop);
+
+
+        // document.onmousemove=function(e){
+           
+        //     oDiv3.style.left=e.clientX - disX +"px";
+        //     oDiv3.style.top=e.clientY - disY +"px";
+        //     oBigger.style.left=2*e.clientX - bigX +"px";
+        //     oBigger.style.top=2*e.clientY - bigY +"px";
+        // }
+       
+        // oDiv3.onmouseup=function(e){
+        //     document.onmousemove=null;
+            
+        // }
+      
+
+        // }
+        
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#bddd{
+    width: 1230px;
+    background-image: url("img/01_s_2x.jpg");
+    background-size: 100%
+    
+}
+h3{
+    widows: 960px;
+    height: 100px;
+    background: #eeeeee;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+    line-height: 100px;
+}
+#img-box{
+    width: 960px;
+    margin: 50px auto 0px;
+   
+}
+#img-box .img{
+    width: 960px;
+    display: block;
+}
+#img-box .img_960 ,#img-box .img_480{
+    display: none;
+}
+#content{
+    width:960px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#content div{
+    height: 300px;
+    display: table;
+}
+#content div p{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+#left{
+    width: 630px;
+    background: #ff006f;
+    float: left;
+}
+#right{
+    width: 300px;
+    background: #00ffff;
+    float: right;
+}
+@media screen and (max-width:960px){
+    h3{
+        width:100%;
+    }
+    #img-box{
+        width: 100%;
+    }
+    #img-box .img_480,#img-box .img_100{
+        display: none;
+    }
+    #img-box .img_960{
+        display: block;
+        width: 100%;
+    }
+    #content{
+        width: 100%;
+    }
+    #left{
+        width:60%;
+    }
+    #right{
+        width:30%;
+    }
+}
+@media screen and (max-width:480px){
+    #img-box .img_100,#img-box .img_960{
+        display: none;
+    }
+    #img-box .img_480{
+        display: block;
+        width: 100%;
+    }
+    #left,#right{
+        width: 100%;
+    }
+}

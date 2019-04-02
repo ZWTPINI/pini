@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        }
+    #container{
+        width: 300px;
+        height: 300px;
+        background: #cccccc;
+    }
+    ul{
+        overflow: hidden;
+    }
+    li{
+        width: 80px;
+        height: 40px;
+        float: left;
+        margin-right:3px;
+        background: #ff0000;
+        text-align: center;
+        line-height: 40px;
+        list-style: none;
+    }
+    #content div{
+        width: 300px;
+        height: 260px;
+        background: #00ff00;
+        display: none;
+    }
+    #content .selected{
+        display: block;
+    }
+    li.active{
+        background: green;
+    }
+    </style>
+</head>
+
+
+
+
+<body>
+    <div id="container">
+        <ul>
+            <li class="active">1111</li>
+            <li>2222</li>
+            <li>33333</li>
+        </ul>
+    
+        <div id="content">
+            <div class="selected">1111</div>
+            <div>2222</div>
+            <div>333333</div>
+    </div>
+    </div>
+
+
+  
+    <script>
+        var aLi=document.getElementsByTagName("li");
+        var oContent = document.getElementById('content');
+        var aDiv = oContent.getElementsByTagName('div');
+        for(var i=0;i<aLi.length;i++)
+        {
+            aLi[i].index = i;//索引
+            aLi[i].onclick=function()
+            {
+                console.log(this);
+                for(var j=0;j<aLi.length; j++)
+                {
+                    aLi[j].className="";
+                    aDiv[j].className="";
+                }
+                this.className="active";
+                aDiv[this.index].className = "selected";
+
+            }
+        }
+
+    </script>
+</body>
+</html>

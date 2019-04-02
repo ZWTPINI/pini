@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+    *{
+            margin: 0;
+            padding: %
+        }
+    #menu{
+        border: 1px;
+        width:100px;
+        display: none;
+        position: relative;
+        top: 0px;
+        left:  0px; 
+    }
+    /* #menu li{
+        
+
+    } */
+
+
+    </style>
+</head>
+<body>
+    
+
+
+
+    <ul id="menu">
+        <li>菜单1</li>
+        <li>菜单2</li>
+        <li>菜单3</li>
+        <li>菜单4</li>
+        <li>菜单5</li>
+    </ul>
+
+    <script>
+
+var oMenu =document.getElementById("menu");
+var oLi =document.getElementsByName('li')
+
+document.oncontextmenu=function(e)
+{
+    e=e||window.event;
+    oMenu.style.display='block';
+    oMenu.style.top=e.clienty+'px';
+    oMenu.style.left=e.clientX+'px'
+
+    return false;//阻止浏览器默认行为
+};
+onclick
+    </script>
+</body>
+</html>

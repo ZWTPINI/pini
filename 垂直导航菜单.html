@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+       .topp{
+        
+           display: none;
+       }
+       .bottomm{
+           display: none;
+       }
+       #content{
+           width: 100px;
+           border: black solid 2px;
+       }
+      h1{
+          color: aliceblue;
+          background: #000;
+        }
+        ul{
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+    
+
+    <div id="content">
+
+        <h1>管理区</h1>
+        <ul>
+            <li>001</li>
+            <li>002</li>
+            <li>003</li>
+        </ul>
+ 
+
+  
+        <h1>交流区</h1>
+        <ul>
+                <li>001</li>
+                <li>002</li>
+                <li>003</li>
+        </ul>
+   
+    </div>
+
+
+
+
+
+    <script>
+        var aH1=document.getElementsByTagName("h1");
+        var aUl=document.getElementsByTagName("ul");
+        for(var i=0;i<aH1.length;i++)
+        {
+        //     aH1[i].index=i;
+        //     aH1[i].onclick=function(){
+        //         var oUl=aUl[this.index];
+        //         if(oUl.style.display==''||oUl.style.display=="none")
+        //         {
+                    
+        //                 oUl.style.display="block";
+        //             }
+        //             else if(oUl.style.display=="block"){
+        //                 oUl.style.display="none";
+        //             }
+
+                
+        //     }
+        // }5
+        aH1[i].index=i;
+        aH1[i].flag=false;
+        aH1[i].onclick=function(){
+            var oUl=aUl[this.index];
+            if(this.flag){
+                oUl.style.display="none";
+            }
+            else{
+                oUl.style.display='block';
+            }
+            this.flag=!this.flag;
+        }
+        }
+    </script>
+</body>
+</html>

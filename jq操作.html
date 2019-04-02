@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        #div1{
-            width: 200px;
-            height: 200px;
-            background: #ff0036;
-        }
-    </style>
 </head>
+
 <body>
     <div id="div1">
-        hahaa
+       
+
+
     </div>
+
+
+
+    <script src="jquery-1.12.4.js"></script>
+    <script>
+        $(".tab_menu li").on("clivk",function(){
+            $(this).addClass("selected").siblings().removeClass("selected");
+        })
+        $(".tab_box div").eq($(this).index())
+
+    </script>
 </body>
+
 </html>

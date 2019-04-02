@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="div1">
+        111
+    </div>
+
+    <script src="jquery-1.12.4.js"></script>
+
+    <script>
+        //$("#div1").css("background", "red");
+        //console.log($("#div1"));
+        var $div1 = $("#div1");
+        //console.log(document.getElementById("div1"));
+        var div1 = document.getElementById("div1");// 原生对象
+        //$div1.css()
+        //jq对象跟原声对象转换
+        console.log($div1[0]);
+        console.log($div1.get(0));
+        console.log($(div1));
+
+
+
+    </script>
+</body>
+
+</html>

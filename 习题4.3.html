@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+
+            var array=[1,2,3,4,5];
+
+           for(a=0;a<5;a++)
+           {
+                for(b=0;b<=a;b++)
+                {
+                  document.write(array[b]);  
+                }
+                document.write("<br>");
+         
+           }
+           /* var arraya=['&nbsp;','&nbsp;','&nbsp;','&nbsp;','&nbsp;'];
+            for(a=0;a<5;a++)
+            {
+              for(b=5;b>=a;b--)
+                  {
+                    document.write(arraya[b]);
+                    document.write('*');
+                  }
+                  document.write("<br>");
+           }*/
+        //  var x;
+        //  for(x=100;x<1000;x++)
+        //  {
+        //    if(x%4==2&&x%7==3&&x%9==5)
+        //    document.write(x+'&nbsp;');
+        //  }
+
+       
+        //   E=A*1000+B*100+C*10+D;
+        
+
+        function choujiang()
+        {
+          for(a=0;a<3;a++)
+          {
+            var b=Math.ceil(Math.random()*9);
+            var count=0;
+            document.write(b+'<br>');
+           if(b==8)
+            {  
+              count++;
+              alert('nbnb');
+              continue;
+              
+            }
+         }
+          return;
+        }
+      
+        var sb=prompt('抽几次呢');
+        for(i=0;i<sb;i++)
+        {
+          choujiang();
+        } 
+        var e=count/(sb*3);
+        document.write("概率"+e);
+
+    </script>
+</body>
+</html>
